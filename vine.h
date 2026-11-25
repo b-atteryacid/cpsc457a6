@@ -1,4 +1,4 @@
-
+#include "baboon.h"
 
 struct vine {
 
@@ -11,4 +11,11 @@ struct vine {
     bool *wantDirs;
     int wantDirsLen;
 
-}
+    int maxWantDirs;
+
+};
+
+
+bool mount(struct vine* v, struct baboon* b);
+bool dismount(struct vine* v, struct baboon* b);
+bool announce(struct vine* v, struct baboon* b);
